@@ -1,0 +1,453 @@
+.title_1 {
+    color:#0F082E;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.bimly_form_progress_section {
+    margin: 30px 0;
+    margin-left: 15px;
+}
+.bimly_form_progress{
+    width: 100%;
+    background: #f7f7f7;
+    height: 8px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.bimly_form_progress{
+    width: 100%;
+    background: #f7f7f7;
+    height: 8px;
+    border-radius: 100px;
+}
+.bimly_form_progress_inner {
+    background: #6149CC;
+    height: 8px;
+    width: 0;
+    border-radius: 10px;
+}
+.plus_wrapper,
+.step_1_radio label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #d9d7dd;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.step_1_radio input[type="radio"] {
+    margin: 0 !important;
+    position: absolute;
+    left: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.bimly_radio {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border: 1px solid #d9d7dd;
+    border-radius: 100px;
+    position: relative;
+}
+.bimly_radio::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.bimly_radio.active::after {
+    height: 10px;
+    background-color: #6149CC;
+}
+.radio_text {
+    flex: 1;
+}
+.bimly_next_btn {
+    background-color: #6149cc;
+    color: #ffffff;
+    width: 100%;
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 4px;
+}
+.title_2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #656179;
+}
+.bimly_list li {
+    color: #0F082E;
+    font-size: 14px;
+    font-weight: 600;
+    list-style: none;
+    margin: 0 0 15px 0 !important;
+}
+.bimly_step_form_wrapper {
+    display: none;
+}
+.bimly_step_form_wrapper.step_active {
+    display: block;
+}
+.bimly_toggle_bar {
+    margin-bottom: 30px;
+}
+.bimly_toggle_bar p {
+    margin-bottom: 0;
+    background: #F5F5F7;
+    text-align: center;
+    color: #0F082E;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px;
+}
+.bimly_toggle_bar .top_toggle_click {
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #F5F5F7;
+	width: 100px;
+	clip-path: polygon(50% 100%, 1% 0, 100% 0);
+	cursor: pointer;
+}
+.plus_wrapper,
+.step_3_radio label {
+    align-items: start;
+}
+.step_3_radio .bimly_radio {
+    margin-top: 5px;
+}
+.plus_text {
+    font-size: 16px;
+    color: #0F082E;
+}
+.plus_icon {
+    font-size: 25px;
+    height: 0;
+    position: relative;
+    top: -8px;
+    color: #6149CC;
+}
+.bimly_text_1 {
+    height: 200px;
+    border-style: solid;
+    border-color: #d9d7dd;
+    font-size: 14px;
+}
+.file_upload  b {
+    padding: 30px;
+    border: 1px solid #D9D7DD;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+.file_upload b span {
+    display: flex;
+    flex-direction: column;
+}
+.image_preview_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.image_preview_container span {
+    height: 100px;
+    margin: 5px;
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+}
+.image_remove:before,
+.image_remove:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    z-index: 9999;
+    right: 4px;
+    top: 8px;
+    transform: rotate(45deg);
+}
+.image_remove:before {
+    transform: rotate(-45deg);
+}
+.image_preview_container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#image_input {
+    position: absolute;
+    visibility: hidden;
+}
+.bimly_toggle_hide {
+    background: #F5F5F7;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    padding: 0 15px;
+}
+.bimly_toggle_hide ul li {
+    color: #222;
+}
+.bimly_toggle_hide.active {
+    height: auto;
+    overflow: visible;
+    padding: 15px;
+}
+.bimly_toggle_hide.active + .top_toggle_click svg {
+    transform: rotate(180deg);
+}
+.bimly_loop_btn_1 {
+    background: #F5F5F7;
+    color: #0F082E;
+}
+.back_arrow {
+    position: absolute;
+    top: -14px;
+    left: 0;
+}
+.bimly_text_second {
+    height: auto;
+    border: none;
+    pointer-events: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 15px 0;
+}
+.image_preview_gap {
+    margin-bottom: 20px;
+}
+.image_preview_gap .image_remove {
+    pointer-events: none;
+}
+.image_preview_gap .image_remove::before, 
+.image_preview_gap .image_remove::after {
+    display: none;
+}
+.summary_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.summary_icon {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0F082E;
+    font-weight: 600;
+}
+.edit_style,
+.summary_edit {
+    color: #6149CC;
+}
+.gap_1 p ,
+.gap_1 h1 {
+    margin-bottom: 0;
+}
+.gap_1 {
+    margin: 30px 0;
+}
+.step_6_form input,
+.step_6_form select {
+    border: 1px solid #D9D7DD !important;
+    box-shadow: none !important;
+    border-radius: 5px !important;
+    font-size: 14px !important;
+    height: 40px !important;
+}
+.line_text_outer {
+    text-align: center;
+    padding: 20px 0;
+}
+.line_text {
+    position: relative;
+    text-align: center;
+    color: #656179;
+}
+.line_text:before, .line_text:after {
+    content: '';
+    position: absolute;
+    background: #D9D7DD;
+    width: calc(100% + 10px);
+    height: 1px;
+    top: 50%;
+    left: 100%;
+    margin: 0 10px;
+}
+.line_text:before {
+    right: 100%;
+    left: inherit;
+}
+.plus_added_text {
+    color: #6149CC;
+    font-size: 14px;
+    font-weight: 600;
+}
+.plus_added {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+}
+.plus_added_icon {
+    display: flex;
+}
+.info_show {
+    padding: 20px 0;
+}
+.info_show > div {
+    margin-bottom: 15px;
+}
+.info_show p {
+    margin-bottom: 0;
+}
+.info_label {
+    color: #656179;
+    font-size: 14px;
+    font-weight: 400;
+}
+.info_value {
+    color: #0F082E;
+    font-size: 14px;
+    font-weight: 600;
+}
+.line_text_outer_2 {
+    text-align: left;
+    margin-bottom: 0 !important;
+}
+.line_text_outer_2 .line_text::before {
+    display: none;
+}
+.line_text_outer_2 .line_text::after {
+    width: calc(100% + 100px);
+}
+.signature_field {
+    border-radius: 4px;
+    border: 1px solid var(--greys-dark-4, #D9D7DD);
+    padding: 60px;
+    text-align: center;
+    color: #656179;
+    font-size: 14px;
+}
+.signature_popup {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.signature_popup.active {
+    display: block;
+}
+.signature_btn{
+    margin: 0 !important;
+    padding: 0 20px;
+    background: #6149CC;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+    transform: rotate(-90deg);
+    margin-top: 70px !important;
+}
+.signatture_button {
+    position: absolute;
+    height: 100%;
+}
+.signatture_button_action {
+    display: flex;
+    flex-direction: column;
+}
+.signatture_button_back{
+    position: absolute;
+    bottom: 0;
+}
+.signatture_button_back .signature_btn {
+    margin: 0 0 60px 24px !important;
+    background-color: #F5F5F7;
+}
+.signatture_button_back .signature_btn svg {
+    transform: rotate(90deg);
+    display: flex;
+}
+.clear_btn {
+    margin-top: 90px !important;
+    background-color: #F5F5F7;
+    color: #0F082E;
+}
+.signature_field_outer {
+    margin-bottom: 30px;
+}
+.final_summary_box {
+    background: #F5F5F7;
+    border-radius: 4px;
+    padding: 20px;
+}
+.final_summmary_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.final_summmary_header p {
+    margin-bottom: 0;
+}
+.summary_name {
+    color: #0F082E;
+    font-size: 16px;
+    font-weight: 500;
+}
+.summary_top_header {
+    color: #0F082E;
+    margin: 20px 0;
+}
+.summary_icon_2 {
+    margin-top: 15px;
+}
+.summary_icon_2 b {
+    color: #656179;
+    font-size: 14px;
+    font-weight: 400;
+}
+.image_preview_container_2 span {
+    width: 65px;
+    height: 60px;
+    border-radius: 5px;
+}
+.image_preview_container_2 span:before,
+.image_preview_container_2 span:after {
+    display: none;
+}
+.image_preview_container_2 {
+    margin: 15px 0;
+}
+.summary_btn {
+    display: flex;
+    justify-content: space-between;
+}
+.summary_btn button {
+    margin: 0;
+    border: 1px solid #6149CC;
+    border-radius: 4px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    color: #6149CC;
+    width: 110px;
+    height: 25px;
+}
