@@ -25,6 +25,7 @@ function bimly_step_form_shortcode() {
         <?php require_once('step-7.php');?>
         <?php require_once('step-8.php');?>
         <?php require_once('step-9.php');?>
+        <?php require_once('step-10.php');?>
     </div>
 <?php
 }

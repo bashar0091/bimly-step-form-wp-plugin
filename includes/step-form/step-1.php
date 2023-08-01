@@ -8,7 +8,7 @@
 
     <h1 class="title_1">Wybierz rodzaj robót, które chcesz odebrać</h1>
 
-    <form action="" class="step_1_radio">
+    <form action="" class="step_1_radio pdf_title_click">
         <label>
             <span class="bimly_radio"></span>
             <input type="radio" name="radio_1">

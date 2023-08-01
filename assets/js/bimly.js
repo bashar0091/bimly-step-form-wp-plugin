@@ -38,6 +38,7 @@ jQuery(document).ready(function($) {
     step_active_deactive(6,7);
     step_active_deactive(7,8);
     step_active_deactive(8,9);
+    step_active_deactive(9,10);
 
     // loop button click 
     $('.bimly_loop_btn_1').click(function(){
@@ -110,6 +111,7 @@ jQuery(document).ready(function($) {
     back_arrow_func(7, 6);
     back_arrow_func(8, 7);
     back_arrow_func(9, 8);
+    back_arrow_func(10, 9);
    
     // summary edit click
     $('.summary_edit').click(function(){
@@ -171,5 +173,26 @@ jQuery(document).ready(function($) {
     }
     signature_func(1);
     signature_func(2);
+
+
+    // pdf open close 
+    $('.pdf_generator').click(function(){
+        $('.pdf_view_time').addClass('active');
+    });
+    $('.back_arrow_pdf_close').click(function(){
+        $('.pdf_view_time').removeClass('active');
+    });
+
+    // pdf title show
+    $('.pdf_title_click label').click(function(){
+        var pdf_title_get = $(this).find('.radio_text').text();
+        $('.pdf_title').text(pdf_title_get);
+    });
+
+    // pdf date show
+    $('.data_1').on('change', function() {
+        var data_store = $(this).val();
+        $('.pdf_date').text(data_store);
+    });
 
 });
