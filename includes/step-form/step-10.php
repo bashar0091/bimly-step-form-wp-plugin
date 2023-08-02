@@ -14,7 +14,7 @@
             <input type="email" name="pdf_sending_email">
         </div>
 
-        <button type="submit" class="bimly_next_btn">Udostępnij</button>
+        <button type="submit" name="email_pdf_send" class="bimly_next_btn">Udostępnij</button>
     </form>
     
 </div>
