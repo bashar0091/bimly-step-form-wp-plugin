@@ -19,7 +19,7 @@
                 Kliknij aby dodać podpis
             </div>
         </div>
-        <div class="plus_added">
+        <!-- <div class="plus_added">
             <span class="plus_added_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                     <path opacity="0.15" d="M16.0003 29.3334C23.3641 29.3334 29.3337 23.3639 29.3337 16.0001C29.3337 8.63628 23.3641 2.66675 16.0003 2.66675C8.63653 2.66675 2.66699 8.63628 2.66699 16.0001C2.66699 23.3639 8.63653 29.3334 16.0003 29.3334Z" fill="#6149CC"/>
@@ -27,7 +27,7 @@
                 </svg>
             </span>
             <span class="plus_added_text">Dodaj kolejnego przedstawiciela wykonawcy</span>
-        </div>
+        </div> -->
 
 
     </div>
@@ -64,7 +64,7 @@
                 Kliknij aby dodać podpis
             </div>
         </div>
-        <div class="plus_added">
+        <!-- <div class="plus_added">
             <span class="plus_added_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                     <path opacity="0.15" d="M16.0003 29.3334C23.3641 29.3334 29.3337 23.3639 29.3337 16.0001C29.3337 8.63628 23.3641 2.66675 16.0003 2.66675C8.63653 2.66675 2.66699 8.63628 2.66699 16.0001C2.66699 23.3639 8.63653 29.3334 16.0003 29.3334Z" fill="#6149CC"/>
@@ -72,7 +72,7 @@
                 </svg>
             </span>
             <span class="plus_added_text">Dodaj kolejnego przedstawiciela wykonawcy</span>
-        </div>
+        </div> -->
 
 
     </div>

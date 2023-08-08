@@ -8,43 +8,46 @@
 
     <h1 class="title_1">Wybierz rodzaj robót, które chcesz odebrać</h1>
 
-    <form action="" class="step_1_radio pdf_title_click">
-        <label>
-            <span class="bimly_radio"></span>
+    <form action="" class="step_2_radio step_1_radio pdf_title_click">
+        <label class="error">
+            <span class="bimly_radio bimly_radio_2"></span>
             <input type="radio" name="radio_1">
             <span class="radio_text">Roboty ziemne</span>
         </label>
-        <label>
-            <span class="bimly_radio"></span>
+        <label class="error">
+            <span class="bimly_radio bimly_radio_2"></span>
             <input type="radio" name="radio_1">
             <span class="radio_text">Konstrukcje żelbetowe (fundamenty, murowanie ścian, stropy).</span>
         </label>
-        <label>
-            <span class="bimly_radio"></span>
+        <label class="error">
+            <span class="bimly_radio bimly_radio_2"></span>
             <input type="radio" name="radio_1">
             <span class="radio_text">Konstrukcje stalowe</span>
         </label>
-        <label>
-            <span class="bimly_radio"></span>
+        <label class="error">
+            <span class="bimly_radio bimly_radio_2"></span>
             <input type="radio" name="radio_1">
             <span class="radio_text">Więźba dachowa</span>
         </label>
-        <label>
-            <span class="bimly_radio"></span>
+        <label class="error">
+            <span class="bimly_radio bimly_radio_2"></span>
             <input type="radio" name="radio_1">
             <span class="radio_text">Poszycie dachowe</span>
         </label>
-        <label>
-            <span class="bimly_radio"></span>
+        <label class="error">
+            <span class="bimly_radio bimly_radio_2"></span>
             <input type="radio" name="radio_1">
             <span class="radio_text">Stolarka okienna</span>
         </label>
-        <label>
-            <span class="bimly_radio"></span>
+        <label class="error">
+            <span class="bimly_radio bimly_radio_2"></span>
             <input type="radio" name="radio_1">
             <span class="radio_text">Brama garażowa</span>
         </label>
+
     </form>
 
     <button class="bimly_next_btn bimly_next_btn_1">Dalej</button>
+    
+    
 </div>

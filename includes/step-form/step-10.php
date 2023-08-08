@@ -9,9 +9,18 @@
     <h1 class="title_1">Udostępnij protokół odbioru</h1>
 
     <form action="" method="post" class="pdf_sending_form">
+
+        <input type="hidden" name="work_type_2" class="data_4">
+        <input type="hidden" name="work_address_2" class="database_save_2">
+        <input type="hidden" name="work_date_2" class="database_save_1">
+        <input type="hidden" name="work_invester_2" class="database_save_5">
+        <input type="hidden" name="investor_representative_2" class="database_save_6">
+        <input type="hidden" name="work_contractor_2" class="database_save_7">
+        <input type="hidden" name="contractor_representative_2" class="database_save_8">
+
         <div>
             <label>Na jaki adres email wysłać protokół PDF?</label>
-            <input type="email" name="pdf_sending_email">
+            <input type="email" name="pdf_sending_email" required>
         </div>
 
         <button type="submit" name="email_pdf_send" class="bimly_next_btn">Udostępnij</button>

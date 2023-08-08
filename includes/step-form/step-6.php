@@ -13,26 +13,24 @@
     <form action="" class="step_6_form">
         <div>
             <label>Data sporządzenia protokołu</label>
-            <input type="date" class="data_1">
+            <input type="date" class="data_1 error">
         </div>
 
         <div>
             <label>Miejsce inwestycji (miejsce odbioru robót)</label>
-            <input type="text" class="data_2">
+            <input type="text" class="data_2 error">
         </div>
 
         <div>
             <label>Podstawa sporządzenia protokołu</label>
-            <select name="" id="" class="data_3">
+            <select name="" id="" class="data_3 error">
                 <option value="option1">Wybierz z listy rozwijanej...</option>
             </select>
         </div>
 
         <div>
             <label>Przedmiot odebranych robót</label>
-            <select name="" id="" class="data_4">
-                <option value="option2">Wybierz z listy rozwijanej...</option>
-            </select>
+            <input type="text" class="data_4" disabled>
         </div>
 
         <div class="line_text_outer">
@@ -40,13 +38,15 @@
         </div>
         <div>
             <label>Nazwa inwestora</label>
-            <input type="text" class="data_5" placeholder="Wpisz nazwę inwestora">
+            <input type="text" class="data_5 error" placeholder="Wpisz nazwę inwestora">
         </div>
-        <div>
-            <label>Imię i nazwisko przedstawicieli inwestora</label>
-            <input type="text" class="data_6" placeholder="Wpisz przedstawiciela inwestora">
+        <div class="input_append_1">
+            <div>
+                <label>Imię i nazwisko przedstawicieli inwestora</label>
+                <input type="text" class="data_6 error" placeholder="Wpisz przedstawiciela inwestora">
+            </div>
         </div>
-        <div class="plus_added">
+        <div class="plus_added plus_added_1">
             <span class="plus_added_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                     <path opacity="0.15" d="M16.0003 29.3334C23.3641 29.3334 29.3337 23.3639 29.3337 16.0001C29.3337 8.63628 23.3641 2.66675 16.0003 2.66675C8.63653 2.66675 2.66699 8.63628 2.66699 16.0001C2.66699 23.3639 8.63653 29.3334 16.0003 29.3334Z" fill="#6149CC"/>
@@ -61,13 +61,15 @@
         </div>
         <div>
             <label>Nazwa wykonawcy</label>
-            <input type="text" class="data_7" placeholder="Wpisz nazwę wykonawcy">
+            <input type="text" class="data_7 error" placeholder="Wpisz nazwę wykonawcy">
         </div>
-        <div>
-            <label>Imię i nazwisko przedstawicieli wykonawcy</label>
-            <input type="text" class="data_8" placeholder="Wpisz przedstawiciela wykonawcy">
+        <div class="input_append_2">
+            <div>
+                <label>Imię i nazwisko przedstawicieli wykonawcy</label>
+                <input type="text" class="data_8 error" placeholder="Wpisz przedstawiciela wykonawcy">
+            </div>
         </div>
-        <div class="plus_added">
+        <div class="plus_added plus_added_2">
             <span class="plus_added_icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                     <path opacity="0.15" d="M16.0003 29.3334C23.3641 29.3334 29.3337 23.3639 29.3337 16.0001C29.3337 8.63628 23.3641 2.66675 16.0003 2.66675C8.63653 2.66675 2.66699 8.63628 2.66699 16.0001C2.66699 23.3639 8.63653 29.3334 16.0003 29.3334Z" fill="#6149CC"/>
@@ -82,7 +84,7 @@
         </div>
         <div>
             <label>Data sporządzenia protokołu</label>
-            <input type="date" class="data_9">
+            <input type="date" class="data_9 error">
         </div>
 
     </form>

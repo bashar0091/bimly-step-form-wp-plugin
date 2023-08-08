@@ -32,13 +32,7 @@
         </a>
     </div>
 
-    <div> 
-        <textarea class="bimly_text_1 bimly_text_second"></textarea>
-
-        <div>
-            <div class="image_preview_container image_preview_gap"></div>
-        </div>
-    </div>
+    <div class="summary_append"></div>
 
     <div class="summary_wrapper">
         <span class="summary_icon">
@@ -66,10 +60,10 @@
             <p class="info_label">Podstawa sporządzenia protokołu</p>
             <p class="info_value data_show_3"></p>
         </div>
-        <div>
+        <!-- <div>
             <p class="info_label">Przedmiot odebranych robót</p>
             <p class="info_value data_show_4"></p>
-        </div>
+        </div> -->
 
         <div class="line_text_outer line_text_outer_2">
             <span class="line_text">Inwestor</span>
@@ -78,9 +72,11 @@
             <p class="info_label">Nazwa inwestora</p>
             <p class="info_value data_show_5"></p>
         </div>
-        <div>
-            <p class="info_label">Imię i nazwisko przedstawicieli inwestora</p>
-            <p class="info_value data_show_6"></p>
+        <div class="input_save_append_1">
+            <div>
+                <p class="info_label">Imię i nazwisko przedstawicieli inwestora</p>
+                <p class="info_value data_show_6"></p>
+            </div>
         </div>
 
         <div class="line_text_outer line_text_outer_2">
@@ -90,9 +86,11 @@
             <p class="info_label">Nazwa inwestora</p>
             <p class="info_value data_show_7"></p>
         </div>
-        <div>
-            <p class="info_label">Imię i nazwisko przedstawicieli inwestora</p>
-            <p class="info_value data_show_8"></p>
+        <div class="input_save_append_2">
+            <div>
+                <p class="info_label">Imię i nazwisko przedstawicieli inwestora</p>
+                <p class="info_value data_show_8"></p>
+            </div>
         </div>
 
         <div class="line_text_outer line_text_outer_2">

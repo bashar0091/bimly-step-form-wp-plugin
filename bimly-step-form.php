@@ -48,3 +48,5 @@ add_action( 'wp_enqueue_scripts', 'bimly_form_js' );
  */
 require_once plugin_dir_path( __FILE__ ) . 'includes/step-form/step.php';
 require_once plugin_dir_path( __FILE__ ) . 'includes/controllers/mail-send-pdf-controller.php';
+require_once plugin_dir_path( __FILE__ ) . 'admin/database/bimly-table.php';
+require_once plugin_dir_path( __FILE__ ) . 'controllers/form-submit-store.php';

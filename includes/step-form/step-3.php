@@ -26,24 +26,24 @@
         </span>
     </div>
 
-    <div class="plus_wrapper">
+    <div class="plus_wrapper plus_wrapper_click">
         <span class="plus_icon">+</span>
         <span class="plus_text">Dodaj swoją usterkę</span>
     </div>
     <form action="" class="step_1_radio step_3_radio">
-        <label>
-            <span class="bimly_radio"></span>
-            <input type="radio" name="radio_2">
+        <label class="error">
+            <span class="bimly_radio bimly_radio_3"></span>
+            <input type="radio" name="radio_3">
             <span class="radio_text">Wizualna kontrola: Sprawdź, czy okna i drzwi są wolne od uszkodzeń mechanicznych, zarysowań czy innych wad powierzchni. Upewnij się, że elementy są estetycznie dopasowane do całego budynku</span>
         </label>
-        <label>
-            <span class="bimly_radio"></span>
-            <input type="radio" name="radio_2">
+        <label class="error">
+            <span class="bimly_radio bimly_radio_3"></span>
+            <input type="radio" name="radio_3">
             <span class="radio_text">Wypoziomowanie: Upewnij się, że ramy okienne i drzwiowe są wypoziomowane pionowo i poziomo, co wpłynie na właściwe działanie stolarki. Możesz użyć poziomicy, aby dokonać tej kontroli</span>
         </label>
-        <label>
-            <span class="bimly_radio"></span>
-            <input type="radio" name="radio_2">
+        <label class="error">
+            <span class="bimly_radio bimly_radio_3"></span>
+            <input type="radio" name="radio_3">
             <span class="radio_text">Otwieranie i zamykanie: Sprawdź, czy okna i drzwi otwierają się i zamykają płynnie oraz czy mechanizmy zamknięć działają prawidłowo. Powinny być szczelne i nie powodować hałasu ani przeciągów</span>
         </label>
     </form>

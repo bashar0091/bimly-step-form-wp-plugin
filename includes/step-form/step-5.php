@@ -32,12 +32,8 @@
         </a>
     </div>
 
-    <div> 
-        <textarea class="bimly_text_1 bimly_text_second"></textarea>
-
-        <div>
-            <div class="image_preview_container image_preview_gap"></div>
-        </div>
+    <div class="summary_append"> 
+        
     </div>
 
     <button class="bimly_next_btn bimly_next_btn_5">Dalej</button>

@@ -5,13 +5,26 @@ require_once 'dompdf/autoload.inc.php';
 use Dompdf\Dompdf;
 
 if (isset($_POST['email_pdf_send'])) {
+
+    $pdf_sending_email = $_POST['pdf_sending_email'];
+
+    $work_type_2 = $_POST['work_type_2'];
+    $work_address_2 = $_POST['work_address_2'];
+    $work_date_2 = $_POST['work_date_2'];
+    $work_invester_2 = $_POST['work_invester_2'];
+    $investor_representative_2 = $_POST['investor_representative_2'];
+    $work_contractor_2 = $_POST['work_contractor_2'];
+    $contractor_representative_2 = $_POST['contractor_representative_2'];
+
+    $today_date = date("Y-m-d H:i:s");
+
     // Form data
-    $Mailsubject = 'test';
-    $Mailto = 'awalbashar194@gmail.com';
+    $Mailsubject = 'New Enquiry';
+    $Mailto = $pdf_sending_email;
 
     // Set the sender's email and name
-    $senderEmail = 'demo1@gmail.com';
-    $senderName = 'Your Name';
+    $senderEmail = 'bimly@gmail.com';
+    $senderName = 'Bimly';
     $subject = $Mailsubject;
 
     // HTML template (same as in your original code)
@@ -23,7 +36,7 @@ if (isset($_POST['email_pdf_send'])) {
         <table style="width: 100%;margin-bottom: 20px;">
             <tr>
                 <td style="color: #6149CC; font-family: Lato; font-size: 25px; font-weight: 700;">bimly</td>
-                <td style="color: #0F082E;font-family: Lato;font-size: 15px;font-weight: 400;text-align: right;">24.06.2023r, Białystok</td>
+                <td style="color: #0F082E;font-family: Lato;font-size: 15px;font-weight: 400;text-align: right;">'.$today_date.'r, Białystok</td>
             </tr>
         </table>
 
@@ -36,31 +49,31 @@ if (isset($_POST['email_pdf_send'])) {
                 <table style="width: 100%;">
                     <tr>
                         <td style="color: #656179; font-family: Lato; font-size: 16px; font-weight: 400; padding: 10px;">Rodzaj robót</td>
-                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; padding: 10px;">Stolarka okienna</td>
+                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; padding: 10px;">'.$work_type_2.'</td>
                     </tr>
                     <tr>
                         <td style="color: #656179; font-family: Lato; font-size: 16px; font-weight: 400; background: #F5F5F7; padding: 10px;">Adres inwestycji</td>
-                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; background: #F5F5F7; padding: 10px;">ul. Kościuszki 24, 15-764 Białystok</td>
+                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; background: #F5F5F7; padding: 10px;">'.$work_address_2.'</td>
                     </tr>
                     <tr>
                         <td style="color: #656179; font-family: Lato; font-size: 16px; font-weight: 400; padding: 10px;">Data odbioru</td>
-                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; padding: 10px;">17.05.2023r</td>
+                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; padding: 10px;">'.$work_date_2.'</td>
                     </tr>
                     <tr>
                         <td style="color: #656179; font-family: Lato; font-size: 16px; font-weight: 400; background: #F5F5F7; padding: 10px;">Inwestor</td>
-                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; background: #F5F5F7; padding: 10px;">Jan Kowalski</td>
+                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; background: #F5F5F7; padding: 10px;">'.$work_invester_2.'</td>
                     </tr>
                     <tr>
                         <td style="color: #656179; font-family: Lato; font-size: 16px; font-weight: 400; padding: 10px;">Przedstawiciel Inwestora</td>
-                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; padding: 10px;">Jerzy Kwiatkowski</td>
+                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; padding: 10px;">'.$investor_representative_2.'/td>
                     </tr>
                     <tr>
                         <td style="color: #656179; font-family: Lato; font-size: 16px; font-weight: 400; background: #F5F5F7; padding: 10px;">Wykonawca</td>
-                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; background: #F5F5F7; padding: 10px;">Bartosz Gudewicz</td>
+                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; background: #F5F5F7; padding: 10px;">'.$work_contractor_2.'</td>
                     </tr>
                     <tr>
                         <td style="color: #656179; font-family: Lato; font-size: 16px; font-weight: 400; padding: 10px;">Przedstawiciel Wykonawcy</td>
-                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; padding: 10px;">Piotr Gudewicz</td>
+                        <td style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 600; padding: 10px;">'.$contractor_representative_2.'</td>
                     </tr>
                 </table>
             </div>
@@ -71,8 +84,45 @@ if (isset($_POST['email_pdf_send'])) {
             <div style="border-radius: 4px; background: var(--greys-dark-5, #F5F5F7); padding: 10px;">
                 <div style="color: #0F082E; font-family: Lato; font-size: 16px; font-weight: 400;">Częstym problemem jest sytuacja, kiedy okno możemy otworzyć albo zamknąć, ale nie da się go ustawić w pozycji uchylonej. Może być to spowodowane awarią rozwórki, zgromadzonym w okuciach okiennych brudem, opadnięciem okna na zawiasach albo awarią klamki.</div>
                 <div style="color:#0f082e;font-family:Lato;font-size: 17px;font-weight:700;margin: 15px 0;">Usterka istotna</div>
-                <div><img style="width: 100px;height: 85px;object-fit: cover;" src="https://images.pexels.com/photos/17619209/pexels-photo-17619209/free-photo-of-light-road-traffic-vacation.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div>
             </div>
+        </div>
+
+        <div>
+            Przedmiot robót nie nadaje się do odbioru, ponieważ usterki są istotne i uniemożliwiają prawidłowe użytkowanie umowy, zgodnie z uwagami opisanymi w niniejszym protokole.
+        </div>
+
+        <div style="
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    ">
+            <div>
+                <div>Inwestor</div>
+                <div></div>
+            </div>
+            <div style="
+            margin-left: auto;
+        ">
+                <div>Wykonawca</div>
+                <div></div>
+            </div>
+        </div>
+
+        <div style="
+        background: #6149CC;
+        display: grid;
+        align-items: center;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        color: #fff;
+    ">
+            <div>bimly</div>
+            <div style="
+            text-align: center;
+        "><a href="#" style="
+        color: #fff;
+    ">www.bilmy.pl</a></div>
+            <div></div>
         </div>
     </div>
     ';
@@ -106,11 +156,15 @@ if (isset($_POST['email_pdf_send'])) {
     $email_body .= chunk_split(base64_encode($pdf_content)) . "\r\n";
     $email_body .= "--boundary--";
 
-    // Send the email with the PDF attachment
-    if (mail($Mailto, $subject, $email_body, $headers)) {
-        echo "<h4 style='border: 1px solid;padding: 10px;'>Send Success</h4>";
-    } else {
-        echo "<h4 style='border: 1px solid;padding: 10px;'>Send Failed</h4>";
+    // Suppress errors for the mail function call
+    $success = error_reporting(0); // Suppress errors
+    $mail_result = mail($Mailto, $subject, $email_body, $headers);
+    error_reporting($success); // Restore error reporting
+
+    // Check if mail was sent successfully
+    if ($mail_result) {
+        header('Location: https://bimly.pilardev.fi/thank-you/');
+        exit;
     }
 }
 ?>
